@@ -1,0 +1,302 @@
+/*
+*******************************************
+*******************************************
+
+Template Name: portfolio
+Template URL: http://
+Description:  Personal Portfolio Template.
+Author: Shefat production
+Author URL: https://
+Version: 1.0
+
+* This file contains the styling for the actual theme, this
+is the file you need to edit to change the look of the
+theme.
+
+This files contents are outlined below >>>>
+
+*** SEARCH EACH SECTION AS IT COMMENTS, YOU WILL GET THE RIGHT SECTION.
+
+**************************************************
+**************************************************
+
+==== CSS INDEX ===================================
+
+01 - defaul css
+02 - Common heading part css
+03 - back to top button
+
+==================================================*/
+
+/*================================================
+    01 - defaul css
+==================================================*/
+
+* {
+    padding: 0;
+    outline: 0;
+    margin: 0;
+}
+
+body,
+p,
+a,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    display: block;
+    text-decoration: none;
+    margin-bottom: 0;
+}
+
+a {
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+body {
+    overflow-x: hidden;
+}
+
+
+h1 {
+    font-size: 60px;
+    line-height: 54px;
+    color: @white;
+}
+
+h2 {
+    font-size: 59px;
+    line-height: auto;
+}
+
+h3 {}
+
+h4 {}
+
+h5 {
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+h6 {}
+
+p {
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 400;
+}
+
+/*mixins and variables start*/
+
+@white: #ffffff;
+@or: #ff7e00;
+@blue: #0e76bd;
+
+.tr (@t) {
+    transition: all linear @t;
+    -moz-transition: all linear @t;
+    -ms-transition: all linear @t;
+    -o-transition: all linear @t;
+    -webkit-transition: all linear @t;
+}
+
+.p() {
+    font-family: 'Poppins', sans-serif;
+}
+
+/*mixins and variables end*/
+
+#login-body {
+    background: url(../images/registration-bg/resigtration-bg.png);
+    padding: 105px 0px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+    &:after {
+        position: absolute;
+        content: '';
+        background: @or;
+        width: 100%;
+        height: 6px;
+        bottom: 0;
+        left: 0;
+    }
+
+
+    .login-form {
+        width: 100%;
+        overflow: hidden;
+        background: @white;
+        padding: 50px 45px;
+        position: relative;
+
+
+
+        &:before {
+            position: absolute;
+            width: 90%;
+            content: '';
+            background: #e8e8e8;
+            height: 2px;
+            bottom: 100px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .top-logo {
+            width: 100%;
+            overflow: hidden;
+            margin-bottom: 30px;
+
+            img {
+                margin-left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+
+        .u-name,
+        .u-pass {
+            position: relative;
+            width: 100%;
+            overflow: hidden;
+            margin-bottom: 20px;
+
+            label {
+                color: @or;
+                font-size: 24px;
+                left: 20px
+            }
+
+            input {
+                width: 100%;
+                padding: 25px 60px;
+                border: 0;
+                background: #e8e8e8;
+            }
+
+            ::placeholder {
+                font-style: italic;
+                color: #101010;
+                text-transform: capitalize;
+            }
+        }
+
+        .u-name {
+            label {
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+        }
+
+        .u-pass {
+            label {
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+        }
+
+        button {
+            color: @white;
+            font-size: 16px;
+            .p();
+            text-transform: uppercase;
+            border: 0;
+            cursor: pointer;
+            padding: 15px 20px;
+            background: @blue;
+            .tr(.3s);
+
+            &:hover {
+                background: @or;
+            }
+
+            i {
+                font-size: 24px;
+                padding-left: 20px;
+            }
+        }
+
+        .ref-link {
+            color: @or;
+            font-size: 16px;
+            .p();
+            text-transform: capitalize;
+            margin-top: 16%;
+            transform: translateY(-50%);
+        }
+
+    }
+
+    .not-member {
+        color: @or;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 26px;
+        padding-top: 60px;
+
+        span {
+            color: @blue;
+            padding-left: 20px;
+            text-transform: capitalize;
+        }
+    }
+}
+
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+    #login-body .login-form .top-logo img {
+        width: 100%;
+    }
+
+    #login-body .login-form .u-name input,
+    #login-body .login-form .u-pass input {
+        padding: 25px 10px 25px 57px;
+    }
+
+    #login-body .not-member {
+        font-size: 15px;
+    }
+
+    footer .pb {
+        font-size: 15px;
+    }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) and (max-width: 767.98px) {}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991.98px) {}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) and (max-width: 1199.98px) {}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {}
+
+/*
+*
+*
+*
+*
+*
+*
+*
+*/

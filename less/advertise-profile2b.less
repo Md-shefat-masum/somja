@@ -1,0 +1,908 @@
+/*
+*******************************************
+*******************************************
+
+Template Name: portfolio
+Template URL: http://
+Description:  Personal Portfolio Template.
+Author: Shefat production
+Author URL: https://mdshefat.com
+Version: 1.0
+
+* This file contains the styling for the actual theme, this
+is the file you need to edit to change the look of the
+theme.
+
+This files contents are outlined below >>>>
+
+*** SEARCH EACH SECTION AS IT COMMENTS, YOU WILL GET THE RIGHT SECTION.
+
+**************************************************
+**************************************************
+
+==== CSS INDEX ===================================
+
+01 - defaul css
+02 - Common heading part css
+03 - back to top button
+
+==================================================*/
+
+/*================================================
+    01 - defaul css
+==================================================*/
+
+* {
+    padding: 0;
+    outline: 0;
+    margin: 0;
+}
+
+body,
+p,
+a,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    display: block;
+    text-decoration: none;
+    margin-bottom: 0;
+}
+
+a {
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+body {
+    overflow-x: hidden;
+}
+
+
+h1 {
+    font-size: 60px;
+    line-height: 54px;
+    color: @white;
+}
+
+h2 {
+    font-size: 59px;
+    line-height: auto;
+}
+
+h3 {}
+
+h4 {}
+
+h5 {
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+h6 {}
+
+p {
+    font-size: 16px;
+    line-height: 20px;
+    color: #6c6b6b;
+    .p();
+    font-weight: 400;
+}
+
+/*mixins and variables start*/
+
+@white: #ffffff;
+@or: #ff7e00;
+@blue: #0e76bd;
+@black: #141213;
+@pg: #6c6b6b;
+
+.tr (@t) {
+    transition: all linear @t;
+    -moz-transition: all linear @t;
+    -ms-transition: all linear @t;
+    -o-transition: all linear @t;
+    -webkit-transition: all linear @t;
+}
+
+.p() {
+    font-family: 'Poppins', sans-serif;
+}
+
+/*mixins and variables end*/
+
+/*header part start*/
+
+#header {
+    nav {
+        background: #08324f;
+        padding-top: 0;
+        padding-bottom: 0;
+        position: relative;
+        z-index: 99999999;
+
+        &:before {
+            width: 100%;
+            height: 6px;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            content: '';
+            background: @white;
+        }
+
+        .nav-item {
+            padding: 0;
+
+            .nav-link {
+                color: #ffffff;
+                .p();
+                text-transform: uppercase;
+                font-size: 18px;
+                padding: 40px 20px;
+                .tr(.3s);
+
+                &:hover,
+                &:focus {
+                    background: @or;
+                }
+            }
+
+            .dropdown-menu {
+                left: -250%;
+                top: 86%;
+                background: #08324f;
+                border: 1px solid @white;
+                z-index: 9999999;
+
+                .dropdown-item {
+                    color: @white;
+                    text-transform: uppercase;
+                    font-size: 14px;
+                    padding-top: 10px;
+                    padding-bottom: 10px;
+
+                    &:hover,
+                    &:focus {
+                        background: @or;
+                        color: @white;
+                    }
+                }
+            }
+
+
+            .pro-pic {
+                padding-top: 22px;
+                padding-bottom: 22px;
+            }
+
+
+        }
+
+        /*side menu resistration*/
+        .side-link {
+            width: 60px;
+            position: relative;
+
+            .dropdown-toggle::after {
+                display: none;
+            }
+
+            i {
+                padding-right: 5px;
+                color: @white;
+                .tr(.3s);
+            }
+
+            .nav-link {
+                &:focus {
+                    background: #08324f;
+                    color: @or;
+                }
+
+                &:hover i,
+                &:focus i {
+                    color: @or;
+                    background: transparent;
+                }
+            }
+
+
+            .nav-link {
+                font-size: 16px;
+                font-family: 'poppins', sans-serif;
+                font-style: italic;
+                font-weight: 200;
+                color: #fffefe;
+                position: relative;
+
+                &:hover {
+                    color: @or;
+                    background: transparent;
+                }
+
+            }
+
+            .s2 {
+                padding-right: 10px;
+                padding-left: 10px;
+
+                &:before {
+                    position: absolute;
+                    content: '';
+                    color: @white;
+                    right: 0;
+                }
+
+            }
+        }
+
+        .s-1 {
+            padding-left: 40px;
+            width: 120px;
+
+            .img {
+                height: 49px;
+                width: 49px;
+                border-radius: 50%;
+                overflow: hidden;
+
+                img {
+                    border-radius: 50%;
+                    width: 100%;
+                }
+            }
+        }
+
+    }
+
+    z-index: 99;
+
+    .navbar-light .navbar-toggler {
+        color: @or;
+    }
+
+    body.side-menu-visible #side-menu {
+        z-index: 99999;
+    }
+
+}
+
+#side-menu {
+    background: #08324f;
+
+    .close {
+        color: @or;
+    }
+
+    .nav-link {
+        color: @white;
+        text-transform: uppercase;
+        .tr(.3s);
+        position: relative;
+
+        &:hover {
+            color: @or;
+        }
+
+
+    }
+
+    .dropdown-menu {
+        left: -250%;
+        top: 86%;
+        background: #08324f;
+        border: 1px solid @white;
+        z-index: 9999999;
+
+        .dropdown-item {
+            color: @white;
+            text-transform: uppercase;
+            font-size: 14px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+
+            &:hover,
+            &:focus {
+                background: @or;
+                color: @white;
+            }
+        }
+    }
+
+
+
+    /*side menu resistration*/
+    .side-link {
+        width: 125px;
+
+        i {
+            padding-right: 10px;
+            color: @or;
+        }
+
+        .dropdown-toggle::after {
+            display: none;
+        }
+
+        .nav-link {
+            font-size: 16px;
+            font-family: 'poppins', sans-serif;
+            font-style: italic;
+            font-weight: 300;
+            color: #fffefe;
+            position: relative;
+
+            &:hover,
+            &:focus {
+                color: @or;
+                background: transparent;
+            }
+
+        }
+
+        .d .s2 {
+            &:before {
+                position: absolute;
+                content: '';
+                color: @white;
+                right: 0;
+            }
+
+        }
+    }
+}
+
+/*header part end*/
+
+/*what we do part start*/
+
+#what-we-do {
+    background: #ececec;
+    padding-top: 90px;
+    padding-bottom: 30px;
+
+    .common-heading {
+        padding-bottom: 70px;
+
+        p {
+            font-style: italic;
+            font-weight: 300;
+        }
+    }
+
+    .des {
+        font-size: 18px;
+        line-height: 24px;
+        color: #333333;
+        text-align: center;
+        padding-bottom: 30px;
+    }
+}
+
+/*what we do part end*/
+
+/*chat box start*/
+
+#transaction-time {
+
+    .chat-body {
+        width: 100%;
+        overflow: hidden;
+        background: #f7f7f7;
+        padding: 10px 25px;
+        box-sizing: border-box;
+        padding-left: 25px;
+
+
+
+        .col-md-3,
+        .col-md-6 {
+            background: @white;
+            padding: 0;
+        }
+
+        .chat-left {
+            padding: 0px 15px;
+            padding-right: 0;
+            width: 100%;
+            overflow: hidden;
+
+            /*all convertion part */
+            .all-convertions {
+                width: 100%;
+                overflow: hidden;
+                border-bottom: 1px solid #f7f7f7;
+
+                .dropdown {
+                    background: transparent;
+
+                    button {
+                        background: transparent;
+                        color: @pg;
+                        border: 0;
+                        padding: 20px 10px;
+                        .p();
+                        font-size: 16px;
+                        font-weight: 300;
+                        font-style: italic;
+                    }
+                }
+            }
+
+
+
+            /*chat clients*/
+            .chat-buddies {
+                width: 100%;
+                height: 750px;
+                overflow-y: scroll;
+
+                ul {
+                    margin: 0;
+                    padding: 0;
+                }
+
+                .nav-pills .nav-item {
+                    width: 100%;
+                }
+
+                .nav-pills .nav-link {
+                    width: 100%;
+                    padding-left: 15px;
+                    color: @black;
+                    padding-right: 0;
+                }
+
+                .active,
+                .nav-pills .show > .nav-link {
+                    background-color: #e1f7c1;
+                    padding: 0;
+                    border-radius: 0;
+                    width: 100%;
+                    color: @black;
+                }
+
+                .chat-clients {
+                    width: 97%;
+                    overflow: hidden;
+                    padding: 10px 0px;
+
+                    .client-pic {
+                        width: 66px;
+                        height: 66px;
+                        border-radius: 50%;
+                        overflow: hidden;
+                        float: left;
+                        position: relative;
+
+                        .not-active {
+                            width: 15px;
+                            height: 15px;
+                            background: @or;
+                            content: '';
+                            position: absolute;
+                            bottom: 11px;
+                            right: 5px;
+                            border-radius: 50%;
+                        }
+
+                        .active {
+                            width: 15px;
+                            height: 15px;
+                            background: green;
+                            content: '';
+                            position: absolute;
+                            bottom: 11px;
+                            right: 5px;
+                            border-radius: 50%;
+                        }
+
+                        .img {
+                            width: 100%;
+                            height: 100%;
+
+                            img {
+                                width: 100%;
+                                border-radius: 50%;
+                            }
+                        }
+                    }
+
+                    .client-name {
+                        float: left;
+                        padding: 12px 15px;
+                        overflow: hidden;
+
+                        h3 {
+                            .p();
+                            font-size: 16px;
+                            font-weight: 600;
+                            text-transform: capitalize;
+                            line-height: 25px;
+                        }
+
+                        .msg {
+                            overflow: hidden;
+
+                            p {
+                                font-size: 13px;
+                                font-weight: 300;
+                                font-style: italic;
+                            }
+                        }
+                    }
+
+                    .chat-time {
+                        overflow: hidden;
+                        text-align: right;
+                        color: #7e7e7e;
+                        font-style: italic;
+                        line-height: 50px;
+                        font-size: 13px;
+                    }
+                }
+
+            }
+
+        }
+
+        /*chat messages*/
+        .mid-top {
+            width: 100%;
+            overflow: hidden;
+            padding: 12px 15px;
+            border-bottom: 1px solid #f7f7f7;
+
+            h3 {
+                font-size: 14px;
+                font-weight: 600;
+                text-transform: capitalize;
+            }
+
+            p {
+                font-size: 10px;
+                font-style: italic;
+            }
+        }
+
+        .chat-msg-body {
+            width: 100%;
+            height: 750px;
+            overflow: hidden;
+            position: relative;
+
+            .top {
+                width: 100%;
+                height: 750px;
+                overflow-y: scroll;
+                overflow-x: hidden;
+                padding-bottom: 130px;
+
+                .chat-msg {
+                    width: 100%;
+                    overflow: hidden;
+
+
+                    .single-chat {
+                        width: 100%;
+                        overflow: hidden;
+                        padding: 15px 15px;
+
+                        .img {
+                            border-radius: 50%;
+                            overflow: hidden;
+                            width: 50px;
+                            height: 50px;
+                            margin-left: 50%;
+                            transform: translateX(-50%);
+
+                            img {
+                                width: 100%;
+                                border-radius: 50%;
+                            }
+                        }
+
+                        .msg-body {
+                            width: 100%;
+                            overflow: hidden;
+
+                            p:nth-child(1) {
+                                span {
+                                    color: @black;
+                                    padding-right: 5px;
+                                    text-transform: capitalize;
+                                    font-size: 14px;
+                                    font-weight: 600;
+                                    line-height: 22px;
+                                }
+
+                                font-size: 10px;
+                                font-style: italic;
+                                padding: 13px;
+
+                            }
+
+                            p:nth-child(2) {
+                                line-height: 20px;
+                                font-size: 14px;
+                            }
+
+                            img {
+                                margin-top: 15px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            form {
+                width: 97%;
+                background: @white;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                padding: 0;
+                height: 130px;
+                padding-top: 15px;
+                padding-bottom: 15px;
+
+                textarea {
+                    width: 90%;
+                    border: 2px solid #acacac;
+                    margin-left: 50%;
+                    transform: translateX(-50%);
+                    height: 65px;
+                    resize: none;
+                    margin-bottom: 15px;
+                }
+
+
+                .input-file {
+                    position: relative;
+                    width: 50px;
+                    height: 40px;
+                    overflow: hidden;
+                    float: left;
+                    margin-left: 25px;
+                    bottom: 12px;
+
+                    input {
+                        width: 40px;
+                        height: 40px; //background: transparent;
+                        font-size: 0;
+                        color: transparent;
+                        border: 0;
+                        overflow: hidden;
+                        cursor: pointer;
+
+
+                        &:after {
+                            position: absolute;
+                            height: 100%;
+                            width: 100%;
+                            background: @white; //border: 1px solid red;
+                            content: '';
+                            left: 0;
+                            top: 0;
+                        }
+                        &:before {
+                            position: absolute;
+                            height: 100%;
+                            width: 100%;
+                            background: transparent; //border: 1px solid red;
+                            content: '';
+                            left: 0;
+                            top: 0;
+                            z-index: 999;
+                        }
+                    }
+
+                    i {
+                        position: absolute;
+                        left: 60%;
+                        top: 0;
+                        font-size: 18px;
+                        color: @pg;
+                        transform: rotate(80deg) translateX(-50%);
+                    }
+                }
+
+                button {
+                    width: 60px;
+                    background: transparent;
+                    color: @pg;
+                    padding: 0;
+                    float: right;
+                    margin-right: 30px;
+                    font-size: 18px;
+                    font-style: italic;
+                    .p();
+                    position: absolute;
+                    bottom: 15px;
+                    right: 0;
+                }
+
+            }
+        }
+
+        .right-top {
+            height: 65px;
+            width: 100%;
+            border-bottom: 1px solid rgba(204, 204, 204, 0.81);
+        }
+        .right-content {
+            padding: 25px;
+            h3 {
+                font-size: 16px;
+                font-weight: 600;
+                line-height: 26px;
+            }
+            p {
+                padding: 10px 0px;
+                font-size: 14px;
+                font-weight: 400;
+                i {
+                    font-size: 18px;
+                    color: @black;
+                }
+            }
+
+        }
+    }
+}
+
+
+/*chat box end*/
+
+/*footer part start*/
+
+footer {
+    background: #131313;
+    padding: 70px 0px 0px;
+
+    .f-logo {
+        width: 100%;
+        overflow: hidden;
+        padding-bottom: 70px;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .refer-link {
+        width: 100%;
+        overflow: hidden;
+        color: @white;
+        padding-bottom: 30px;
+
+        ul {
+            padding-left: 15px;
+            margin-bottom: 0;
+
+            li {
+                a {
+                    text-transform: uppercase;
+                    .p();
+                    color: @white;
+                    .tr(.3s);
+                    font-size: 18px;
+                    line-height: 30px;
+
+                    &:hover {
+                        color: @or;
+                    }
+                }
+            }
+        }
+    }
+
+    form {
+        input {
+            width: 100%;
+            border: 0;
+            border: 1px solid white;
+            padding: 10px 20px;
+            background: transparent;
+            border-radius: 5px;
+            color: @white;
+        }
+
+        button {
+            color: @white;
+            font-size: 16px;
+            .p();
+            text-transform: uppercase;
+            border: 0;
+            cursor: pointer;
+            padding: 18px 45px;
+            background: @blue;
+            .tr(.3s);
+            margin-top: 30px;
+            margin-bottom: 30px;
+
+            &:hover {
+                background: @or;
+            }
+
+            i {
+                font-size: 24px;
+                padding-left: 20px;
+            }
+        }
+    }
+
+    .social-link {
+        width: 100%;
+        overflow: hidden;
+
+        p {
+            font-size: 16px;
+            line-height: 22px;
+            color: @white;
+        }
+
+        a {
+            color: @or;
+            font-size: 18px;
+            padding: 20px 0px;
+        }
+
+        ul {
+            li {
+                float: left;
+
+                a {
+                    padding: 0;
+                    display: inline-block;
+                    color: @white;
+                    .tr(.3s);
+
+                    &:hover {
+                        color: @or;
+                    }
+
+                    i {
+                        margin-right: 15px;
+                    }
+                }
+            }
+        }
+    }
+
+    .pb {
+        padding: 0;
+        color: @white;
+        font-size: 18px;
+        text-align: center;
+        padding-top: 30px;
+        padding-bottom: 30px;
+
+    }
+
+}
+
+/*footer part end*/
+
+/*
+*
+*
+*
+*
+*
+*
+*
+*/

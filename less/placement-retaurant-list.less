@@ -1,0 +1,799 @@
+/*
+*******************************************
+*******************************************
+
+Template Name: portfolio
+Template URL: http://
+Description:  Personal Portfolio Template.
+Author: Shefat production
+Author URL: https://mdshefat.com
+Version: 1.0
+
+* This file contains the styling for the actual theme, this
+is the file you need to edit to change the look of the
+theme.
+
+This files contents are outlined below >>>>
+
+*** SEARCH EACH SECTION AS IT COMMENTS, YOU WILL GET THE RIGHT SECTION.
+
+**************************************************
+**************************************************
+
+==== CSS INDEX ===================================
+
+01 - defaul css
+02 - Common heading part css
+03 - back to top button
+
+==================================================*/
+
+/*================================================
+    01 - defaul css
+==================================================*/
+
+* {
+    padding: 0;
+    outline: 0;
+    margin: 0;
+}
+
+body,
+p,
+a,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    display: block;
+    text-decoration: none;
+    margin-bottom: 0;
+}
+
+a {
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+body {
+    overflow-x: hidden;
+}
+
+
+h1 {
+    font-size: 60px;
+    line-height: 54px;
+    color: @white;
+}
+
+h2 {
+    font-size: 59px;
+    line-height: auto;
+}
+
+h3 {}
+
+h4 {}
+
+h5 {
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+h6 {}
+
+p {
+    font-size: 16px;
+    line-height: 20px;
+    color: #6c6b6b;
+    .p();
+    font-weight: 400;
+}
+
+/*mixins and variables start*/
+
+@white: #ffffff;
+@or: #ff7e00;
+@blue: #0e76bd;
+@black: #141213;
+
+.tr (@t) {
+    transition: all linear @t;
+    -moz-transition: all linear @t;
+    -ms-transition: all linear @t;
+    -o-transition: all linear @t;
+    -webkit-transition: all linear @t;
+}
+
+.p() {
+    font-family: 'Poppins', sans-serif;
+}
+
+/*mixins and variables end*/
+
+/*header part start*/
+
+#header {
+    nav {
+        background: #08324f;
+        padding-top: 0;
+        padding-bottom: 0;
+        position: relative;
+        z-index: 99999999;
+
+        &:before {
+            width: 100%;
+            height: 6px;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            content: '';
+            background: @white;
+        }
+
+        .nav-item {
+            padding: 0;
+
+            .nav-link {
+                color: #ffffff;
+                .p();
+                text-transform: uppercase;
+                font-size: 18px;
+                padding: 40px 20px;
+                .tr(.3s);
+
+                &:hover,
+                &:focus {
+                    background: @or;
+                }
+            }
+
+            .dropdown-menu {
+                left: -250%;
+                top: 86%;
+                background: #08324f;
+                border: 1px solid @white;
+                z-index: 9999999;
+
+                .dropdown-item {
+                    color: @white;
+                    text-transform: uppercase;
+                    font-size: 14px;
+                    padding-top: 10px;
+                    padding-bottom: 10px;
+
+                    &:hover,
+                    &:focus {
+                        background: @or;
+                        color: @white;
+                    }
+                }
+            }
+
+
+            .pro-pic {
+                padding-top: 22px;
+                padding-bottom: 22px;
+            }
+
+
+        }
+
+        /*side menu resistration*/
+        .side-link {
+            width: 60px;
+            position: relative;
+
+            .dropdown-toggle::after {
+                display: none;
+            }
+
+            i {
+                padding-right: 5px;
+                color: @white;
+                .tr(.3s);
+            }
+
+            .nav-link {
+                &:focus {
+                    background: #08324f;
+                    color: @or;
+                }
+
+                &:hover i,
+                &:focus i {
+                    color: @or;
+                    background: transparent;
+                }
+            }
+
+
+            .nav-link {
+                font-size: 16px;
+                font-family: 'poppins', sans-serif;
+                font-style: italic;
+                font-weight: 200;
+                color: #fffefe;
+                position: relative;
+
+                &:hover {
+                    color: @or;
+                    background: transparent;
+                }
+
+            }
+
+            .s2 {
+                padding-right: 10px;
+                padding-left: 10px;
+
+                &:before {
+                    position: absolute;
+                    content: '';
+                    color: @white;
+                    right: 0;
+                }
+
+            }
+        }
+
+        .s-1 {
+            padding-left: 40px;
+            width: 120px;
+
+            .img {
+                height: 49px;
+                width: 49px;
+                border-radius: 50%;
+                overflow: hidden;
+
+                img {
+                    border-radius: 50%;
+                    width: 100%;
+                }
+            }
+        }
+
+    }
+
+    z-index: 99;
+
+    .navbar-light .navbar-toggler {
+        color: @or;
+    }
+
+    body.side-menu-visible #side-menu {
+        z-index: 99999;
+    }
+
+}
+
+#side-menu {
+    background: #08324f;
+
+    .close {
+        color: @or;
+    }
+
+    .nav-link {
+        color: @white;
+        text-transform: uppercase;
+        .tr(.3s);
+        position: relative;
+
+        &:hover {
+            color: @or;
+        }
+
+
+    }
+
+    .dropdown-menu {
+        left: -250%;
+        top: 86%;
+        background: #08324f;
+        border: 1px solid @white;
+        z-index: 9999999;
+
+        .dropdown-item {
+            color: @white;
+            text-transform: uppercase;
+            font-size: 14px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+
+            &:hover,
+            &:focus {
+                background: @or;
+                color: @white;
+            }
+        }
+    }
+
+
+
+    /*side menu resistration*/
+    .side-link {
+        width: 125px;
+
+        i {
+            padding-right: 10px;
+            color: @or;
+        }
+
+        .dropdown-toggle::after {
+            display: none;
+        }
+
+        .nav-link {
+            font-size: 16px;
+            font-family: 'poppins', sans-serif;
+            font-style: italic;
+            font-weight: 300;
+            color: #fffefe;
+            position: relative;
+
+            &:hover,
+            &:focus {
+                color: @or;
+                background: transparent;
+            }
+
+        }
+
+        .d .s2 {
+            &:before {
+                position: absolute;
+                content: '';
+                color: @white;
+                right: 0;
+            }
+
+        }
+    }
+}
+
+/*header part end*/
+
+/*banner part start*/
+#baner {
+    background: url(../images/placemate-restaurent-list/banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 100px 0px;
+}
+
+/*banner part end*/
+
+/*restaurent part start*/
+#restaurent {
+    background: #ececec;
+    padding: 50px 0px 15px;
+
+    .common-heading {
+        padding-bottom: 50px;
+    }
+
+    .res-body {
+        width: 100%;
+        overflow: hidden;
+        padding-bottom: 30px;
+
+        .img {
+            width: 100%;
+            overflow: hidden;
+
+            img {
+                width: 100%
+            }
+        }
+
+        h3 {
+            color: @or;
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 26px;
+            text-transform: capitalize;
+            text-align: center;
+            padding-top: 10px;
+        }
+
+        p {
+            color: #5a5a5a;
+            font-style: italic;
+            font-size: 14px;
+            font-weight: 400;
+            text-align: center;
+        }
+    }
+}
+
+/*restaurent part end*/
+
+/*restaurant list start*/
+#res-list {
+    padding: 50px 0px;
+
+    .common-heading {
+        padding-bottom: 50px;
+    }
+
+    .left {
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+
+        &:after {
+            position: absolute;
+            right: 0;
+            top: 10%;
+            transform: translateY(-505);
+            content: '';
+            background: url(../images/placemate-restaurent-list/mr.png);
+            width: 3px;
+            height: 70%;
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+        }
+
+        .single-part {
+            width: 100%;
+            overflow: hidden;
+            position: relative;
+            padding: 10px 0px;
+            ;
+
+            &:before {
+                position: absolute;
+                bottom: 0;
+                content: '';
+                background: url(../images/placemate-restaurent-list/margin.bottom.png);
+                width: 70%;
+                height: 5px;
+                background-size: 100% 100%;
+                background-repeat: no-repeat;
+            }
+        }
+
+        h4 {
+            font-size: 18px;
+            font-weight: 400;
+            font-family: 'poppins', sans-serif;
+            color: #333333;
+            padding-bottom: 20px;
+        }
+
+        form {
+            padding-left: 15px;
+        }
+
+        .form-group {
+            display: block;
+        }
+
+        .form-group input {
+            padding: 0;
+            height: initial;
+            width: initial;
+            margin-bottom: 0;
+            display: none;
+            cursor: pointer;
+        }
+
+        .form-group label {
+            position: relative;
+            cursor: pointer;
+            color: #5a5a5a;
+            font-size: 16px;
+            font-style: italic;
+            .p();
+            font-weight: 300;
+            padding-bottom: 0;
+            margin-bottom: 0;
+            text-transform: capitalize;
+        }
+
+        .form-group label:before {
+            content: '';
+            -webkit-appearance: none;
+            background-color: transparent;
+            border: 1px solid #5a5a5a;
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+            padding: 6px;
+            display: inline-block;
+            position: relative;
+            vertical-align: middle;
+            cursor: pointer;
+            margin-right: 10px;
+        }
+
+        .form-group input:checked + label:after {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 2px;
+            left: 9px;
+            width: 6px;
+            height: 14px;
+            border: solid #5a5a5a;
+            border-width: 0 2px 2px 0;
+            transform: rotate(45deg);
+        }
+    }
+
+    .right {
+        width: 100%;
+        overflow: hidden;
+
+        .single-body {
+            width: 100%;
+            overflow: hidden;
+            width: 100%;
+            overflow: hidden;
+            position: relative;
+            padding: 30px 0px;
+
+            &:before {
+                position: absolute;
+                bottom: 0;
+                content: '';
+                background: url(../images/placemate-restaurent-list/margin.bottom.png);
+                width: 70%;
+                height: 5px;
+                background-size: 100% 100%;
+                background-repeat: no-repeat;
+            }
+        }
+
+        .s1 {
+            &:before {
+                display: none;
+            }
+        }
+
+        .img {
+            width: 100%;
+            overflow: hidden;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        h3 {
+            font-size: 18px;
+            .p();
+            color: @or;
+            text-transform: capitalize;
+            line-height: 26px;
+            padding-bottom: 5px;
+            font-weight: 600;
+        }
+
+        p {
+            font-size: 14px;
+            color: #5a5a5a;
+            font-weight: 400;
+            padding-bottom: 5px;
+            font-style: italic;
+        }
+
+        i {
+            color: @or;
+            margin: 15px 0px;
+        }
+
+        span {
+            font-size: 11px;
+            margin-left: 50px
+        }
+    }
+
+    .ads_button,
+    .ads_button_next {
+        padding: 12px 20px;
+        border: 1px solid #0e76bd;
+        color: #0e76bd;
+        font-size: 13px;
+        background: transparent;
+        margin-left: 20px;
+        text-transform: uppercase;
+        cursor: pointer;
+        margin-top: 30px;
+    }
+
+    .ads_button_next {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    .ads_button i,
+    .ads_button_next i {
+        padding-left: 15px;
+        font-size: 20px;
+        line-height: 20px;
+    }
+
+    .active,
+    .ads_button_next {
+        background: #0e76bd;
+        color: #fff;
+    }
+
+}
+
+
+/*restaurant list end*/
+
+/*footer part start*/
+
+footer {
+    background: #131313;
+    padding: 70px 0px 0px;
+
+    .f-logo {
+        width: 100%;
+        overflow: hidden;
+        padding-bottom: 70px;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .refer-link {
+        width: 100%;
+        overflow: hidden;
+        color: @white;
+        padding-bottom: 30px;
+
+        ul {
+            padding-left: 15px;
+            margin-bottom: 0;
+
+            li {
+                a {
+                    text-transform: uppercase;
+                    .p();
+                    color: @white;
+                    .tr(.3s);
+                    font-size: 18px;
+                    line-height: 30px;
+
+                    &:hover {
+                        color: @or;
+                    }
+                }
+            }
+        }
+    }
+
+    form {
+        input {
+            width: 100%;
+            border: 0;
+            border: 1px solid white;
+            padding: 10px 20px;
+            background: transparent;
+            border-radius: 5px;
+            color: @white;
+        }
+
+        button {
+            color: @white;
+            font-size: 16px;
+            .p();
+            text-transform: uppercase;
+            border: 0;
+            cursor: pointer;
+            padding: 18px 45px;
+            background: @blue;
+            .tr(.3s);
+            margin-top: 30px;
+            margin-bottom: 30px;
+
+            &:hover {
+                background: @or;
+            }
+
+            i {
+                font-size: 24px;
+                padding-left: 20px;
+            }
+        }
+    }
+
+    .social-link {
+        width: 100%;
+        overflow: hidden;
+
+        p {
+            font-size: 16px;
+            line-height: 22px;
+            color: @white;
+        }
+
+        a {
+            color: @or;
+            font-size: 18px;
+            padding: 20px 0px;
+        }
+
+        ul {
+            li {
+                float: left;
+
+                a {
+                    padding: 0;
+                    display: inline-block;
+                    color: @white;
+                    .tr(.3s);
+
+                    &:hover {
+                        color: @or;
+                    }
+
+                    i {
+                        margin-right: 15px;
+                    }
+                }
+            }
+        }
+    }
+
+    .pb {
+        padding: 0;
+        color: @white;
+        font-size: 18px;
+        text-align: center;
+        padding-top: 30px;
+        padding-bottom: 30px;
+
+    }
+
+}
+
+@media (max-width: 575.98px) {
+
+    #res-list .ads_button,
+    #res-list .ads_button_next {
+        padding: 13px 20px;
+        border: 1px solid #0e76bd;
+        color: #0e76bd;
+        font-size: 13px;
+        background: transparent;
+        margin-left: 2px;
+        text-transform: uppercase;
+        cursor: pointer;
+        margin-top: 30px;
+    }
+
+    #res-list .ads_button_next {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+}
+
+/*footer part end*/
+
+/*
+*
+*
+*
+*
+*
+*
+*
+*/

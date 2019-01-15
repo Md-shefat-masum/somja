@@ -1,0 +1,475 @@
+@media (max-width: 575.98px) {
+    .navbar-light .navbar-brand {
+        width: 70%;
+        padding: 20px 0px;
+    }
+
+    .navbar-light .navbar-brand img {
+        width: 100%;
+    }
+
+    footer .refer-link {
+        padding-bottom: 30px;
+    }
+
+    /*    index.html header part start */
+    #banner {
+        padding-top: 75px;
+        padding-bottom: 100px;
+        background-position: -640px 0px;
+        background-repeat: repeat;
+    }
+
+    #banner .banner-des h5 {
+        font-size: 20px;
+    }
+
+    #banner .banner-des h1 {
+        font-size: 27px;
+        line-height: 37px;
+    }
+
+    #banner .banner-des p {
+        font-size: 14px;
+    }
+
+    /*    index.html header part end*/
+
+    /*    common-heading start*/
+    .common-heading h2 {
+        font-size: 20px;
+        line-height: 28px;
+        padding-bottom: 5px;
+    }
+
+    .common-heading p {
+        font-size: 16px;
+    }
+
+    /*    common-heading end*/
+
+    /*    about me part start*/
+    #about .about-right-des {
+        padding-top: 45px;
+    }
+
+    #about .about-right-des p {
+        font-size: 14px;
+    }
+
+    /*    about me part end*/
+
+    /*    features part start*/
+    #features .right-body .right-single-body a {
+        font-size: 14px;
+        padding-bottom: 0;
+    }
+
+    #features .right-body .sign-up {
+        padding: 13px 40px;
+    }
+
+    #features .right-body {
+        padding: 70px 1px;
+    }
+
+    #features .common-heading {
+        padding-bottom: 25px;
+    }
+
+    #features .left-video-body .video {
+        padding: 30px 0px;
+    }
+
+    #features .right-body .right-single-body {
+        visibility: visible;
+    }
+
+    #features .righ-bg {
+        padding-left: 15px;
+    }
+
+    #features .left-bg {
+        padding-right: 15px;
+        background-size: 0 0;
+    }
+
+    /*    features part end*/
+
+    /*    testimonial part start*/
+
+    #testimonial .t-left-body p i {
+        font-size: 70px;
+    }
+
+    #testimonial .common-heading {
+        padding-bottom: 40px;
+    }
+
+    #testimonial .t-left-body p {
+        font-size: 14px;
+    }
+
+    /*    testimonial part end*/
+
+    /*    advertise-profile.html*/
+    #profile-banner .user-name .follower {
+        left: 60%;
+        top: -71%;
+    }
+
+    #profile-banner .user-name h1 {
+        padding-top: 40px;
+    }
+
+    /*    advertise-profile*/
+    #transaction-time .chat-body .chat-left .chat-buddies .nav-pills .nav-item {
+        width: 75px;
+        height: 75px
+    }
+
+    #transaction-time .chat-body .chat-left .chat-buddies .nav-pills .nav-link {
+        width: 75px;
+        height: 75px;
+        padding: 0;
+    }
+
+    #transaction-time .chat-body .chat-left .chat-buddies .chat-clients {
+        padding: 5px;
+        height: 75px;
+        margin-right: 10px;
+    }
+
+    #transaction-time .chat-body .chat-left .chat-buddies {
+        height: 87px;
+        border: 1px solid #6c6b6b;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        padding: 5px;
+        box-sizing: border-box;
+    }
+
+    #what-we-do .des {
+        font-size: 14px;
+    }
+
+    #features .right-body .right-single-body a {
+        font-size: 10px;
+    }
+
+    #features .right-body .right-single-body p {
+        font-size: 12px;
+    }
+
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+
+    /*    index.html*/
+    /*    common heading part start*/
+    .common-heading h2 {
+        font-size: 30px;
+        line-height: 40px;
+        padding-bottom: 5px;
+    }
+
+    /*    common heading part end*/
+
+    /*    baner part start*/
+    #banner {
+        padding: 100px 0px;
+        background-position: -490px 0px;
+        background-repeat: repeat;
+    }
+
+    #banner .banner-des h1 {
+        font-size: 44px;
+    }
+
+    /*    baner part end*/
+
+    /*    about me part start*/
+    #about .about-right-des p {
+        font-size: 14px;
+    }
+
+    /*    about me part end*/
+
+    /*    advertise-profile.html*/
+    #transaction-time form label {
+        text-align: left;
+    }
+
+    #transaction-time form input {
+        width: 258%;
+    }
+
+    #transaction-time form i {
+        top: 71px;
+    }
+
+    /*    advertise-profile*/
+    #transaction-time .chat-body .chat-left .chat-buddies .nav-pills .nav-item {
+        width: 75px;
+        height: 75px
+    }
+
+    #transaction-time .chat-body .chat-left .chat-buddies .nav-pills .nav-link {
+        width: 75px;
+        height: 75px;
+        padding: 0;
+    }
+
+    #transaction-time .chat-body .chat-left .chat-buddies .chat-clients {
+        padding: 5px;
+        height: 75px;
+        margin-right: 10px;
+    }
+
+    #transaction-time .chat-body .chat-left .chat-buddies {
+        height: 87px;
+        border: 1px solid #6c6b6b;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        padding: 5px;
+        box-sizing: border-box;
+        border-radius: 5px;
+    }
+
+    #what-we-do .des {
+        font-size: 14px;
+    }
+
+    #features .left-bg {
+        background-size: 0 0;
+    }
+
+    #features .right-body .right-single-body a {
+        font-size: 13px;
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    footer form button {
+        padding: 18px 33px;
+    }
+
+    /*    index.html*/
+    /*    banner-part start*/
+    #banner {
+        padding: 150px 0px;
+    }
+
+    #banner .banner-des h1 {
+        font-size: 30px;
+        line-height: 40px;
+        padding: 15px 0px;
+    }
+
+    /*    banner-part end*/
+
+    /*    common headign start*/
+    .common-heading h2 {
+        font-size: 35px;
+        line-height: 45px;
+        padding-bottom: 5px;
+    }
+
+    .common-heading p {
+        font-size: 20px;
+    }
+
+    /*    common headign end*/
+
+    /*    about me part start*/
+    #about .about-right-des p {
+        font-size: 14px;
+    }
+
+    /*    about me part end*/
+
+    /*    advertise part start*/
+    #add .ad-body a {
+        font-size: 25px;
+    }
+
+    /*    advertise part end*/
+    /*    features part start*/
+    #features .right-body .sign-up {
+        padding: 13px 55px;
+    }
+
+    #features .right-body {
+        padding-right: 15px;
+    }
+
+    #features .right-body .right-single-body {
+        overflow: visible;
+    }
+
+    #features .right-body .right-single-body a {
+        font-size: 14px;
+        padding-bottom: 0;
+    }
+
+    /*    features part end*/
+    /*    testimonial part start*/
+    #testimonial .t-left-body p i {
+        font-size: 85px;
+    }
+
+    #testimonial .t-left-body p {
+        font-size: 14px;
+        padding-bottom: 10px;
+    }
+
+    #testimonial .client-img img {
+        margin-top: 50%;
+    }
+
+    /*    testimonial part end*/
+
+    /*    adver tise profile.html*/
+    #profile-banner .pro-img {
+        width: 160px;
+        height: 160px;
+    }
+
+    #profile-banner .user-short-det {
+        padding: 30px 5px;
+    }
+
+    #profile-banner .user-short-det a {
+        padding-bottom: 5px;
+    }
+
+    #profile-banner .user-short-det p {
+        font-size: 12px;
+    }
+
+    #transaction-time form label {
+        text-align: left;
+        line-height: 25px;
+    }
+
+    #transaction-time form i {
+        top: 45px;
+    }
+
+    #transaction-time form button {
+        margin-top: 23px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+
+    /*    index.html*/
+    #header nav .nav-item .nav-link {
+        padding: 38px 8px;
+        font-size: 14px;
+    }
+
+    #header nav .side-link {
+        width: 60px;
+    }
+
+    #header nav .s-1 {
+        width: 100px;
+    }
+
+    #header nav .s-1 .pro-pic {
+        margin-top: -18px;
+        padding-top: 45px;
+        padding-bottom: 0;
+    }
+
+
+
+    /*    bannerpart start*/
+    #banner {
+        padding: 150px 0px;
+    }
+
+    #banner .banner-des h1 {
+        font-size: 45px;
+        padding: 15px 0px;
+    }
+
+    #about .about-right-des p {
+        font-size: 16px;
+    }
+
+    /*    bannerpart end*/
+
+    /*    common heading start*/
+    .common-heading h2 {
+        font-size: 30px;
+        padding-bottom: 5px;
+    }
+
+    .common-heading p {
+        font-size: 17px;
+    }
+
+    /*    common heading end*/
+
+    /*    testimonial part start*/
+    #testimonial .t-left-body p i {
+        font-size: 100px;
+    }
+
+    /*    testimonial part end*/
+
+    /*    features part start*/
+    #features .right-body .sign-up {
+        padding: 13px 85px;
+    }
+
+    /*    features part end*/
+
+    /*    advertise-profile.html*/
+    #transaction-time form i {
+        right: 24px;
+    }
+
+}
+
+@media (min-width: 1200px) {
+
+    #header nav .nav-item .nav-link {
+        padding: 40px 20px;
+        font-size: 14px;
+    }
+
+    #header nav .side-link .s2 {
+        width: 80px;
+    }
+
+    #header nav .s-1 {
+        width: 100px;
+    }
+
+    #header nav .s-1 .pro-pic {
+        margin-top: -18px;
+        padding-top: 45px;
+        padding-bottom: 0;
+    }
+
+    /*    index.html*/
+    #about .about-right-des p {
+        font-size: 16px;
+    }
+
+    /*    advertise-profile .html*/
+    /*
+    #transaction-time form i {
+        top: 19px;
+        right: 28px;
+    }
+*/
+
+    #transaction-time form button {
+        margin-top: 0;
+    }
+}

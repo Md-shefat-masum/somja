@@ -1,0 +1,647 @@
+/*
+*******************************************
+*******************************************
+
+Template Name: portfolio
+Template URL: http://
+Description:  Personal Portfolio Template.
+Author: Shefat production
+Author URL: https://mdshefat.com
+Version: 1.0
+
+* This file contains the styling for the actual theme, this
+is the file you need to edit to change the look of the
+theme.
+
+This files contents are outlined below >>>>
+
+*** SEARCH EACH SECTION AS IT COMMENTS, YOU WILL GET THE RIGHT SECTION.
+
+**************************************************
+**************************************************
+
+==== CSS INDEX ===================================
+
+01 - defaul css
+02 - Common heading part css
+03 - back to top button
+
+==================================================*/
+/*================================================
+    01 - defaul css
+==================================================*/
+* {
+  padding: 0;
+  outline: 0;
+  margin: 0;
+}
+body,
+p,
+a,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  display: block;
+  text-decoration: none;
+  margin-bottom: 0;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+body {
+  overflow-x: hidden;
+}
+h1 {
+  font-size: 60px;
+  line-height: 54px;
+  color: #ffffff;
+}
+h2 {
+  font-size: 59px;
+  line-height: auto;
+}
+h5 {
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 30px;
+}
+p {
+  font-size: 16px;
+  line-height: 20px;
+  color: #6c6b6b;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+}
+/*mixins and variables start*/
+/*mixins and variables end*/
+/*header part start*/
+#header {
+  z-index: 99;
+}
+#header nav {
+  background: #08324f;
+  padding-top: 0;
+  padding-bottom: 0;
+  position: relative;
+  z-index: 99999999;
+  /*side menu resistration*/
+}
+#header nav:before {
+  width: 100%;
+  height: 6px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  content: '';
+  background: #ffffff;
+}
+#header nav .nav-item {
+  padding: 0;
+}
+#header nav .nav-item .nav-link {
+  color: #ffffff;
+  font-family: 'Poppins', sans-serif;
+  text-transform: uppercase;
+  font-size: 18px;
+  padding: 40px 20px;
+  transition: all linear 0.3s;
+  -moz-transition: all linear 0.3s;
+  -ms-transition: all linear 0.3s;
+  -o-transition: all linear 0.3s;
+  -webkit-transition: all linear 0.3s;
+}
+#header nav .nav-item .nav-link:hover,
+#header nav .nav-item .nav-link:focus {
+  background: #ff7e00;
+}
+#header nav .nav-item .dropdown-menu {
+  left: -250%;
+  top: 86%;
+  background: #08324f;
+  border: 1px solid #ffffff;
+  z-index: 9999999;
+}
+#header nav .nav-item .dropdown-menu .dropdown-item {
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 14px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+#header nav .nav-item .dropdown-menu .dropdown-item:hover,
+#header nav .nav-item .dropdown-menu .dropdown-item:focus {
+  background: #ff7e00;
+  color: #ffffff;
+}
+#header nav .nav-item .pro-pic {
+  padding-top: 22px;
+  padding-bottom: 22px;
+}
+#header nav .side-link {
+  width: 60px;
+  position: relative;
+}
+#header nav .side-link .dropdown-toggle::after {
+  display: none;
+}
+#header nav .side-link i {
+  padding-right: 5px;
+  color: #ffffff;
+  transition: all linear 0.3s;
+  -moz-transition: all linear 0.3s;
+  -ms-transition: all linear 0.3s;
+  -o-transition: all linear 0.3s;
+  -webkit-transition: all linear 0.3s;
+}
+#header nav .side-link .nav-link:focus {
+  background: #08324f;
+  color: #ff7e00;
+}
+#header nav .side-link .nav-link:hover i,
+#header nav .side-link .nav-link:focus i {
+  color: #ff7e00;
+  background: transparent;
+}
+#header nav .side-link .nav-link {
+  font-size: 16px;
+  font-family: 'poppins', sans-serif;
+  font-style: italic;
+  font-weight: 200;
+  color: #fffefe;
+  position: relative;
+}
+#header nav .side-link .nav-link:hover {
+  color: #ff7e00;
+  background: transparent;
+}
+#header nav .side-link .s2 {
+  padding-right: 10px;
+  padding-left: 10px;
+}
+#header nav .side-link .s2:before {
+  position: absolute;
+  content: '';
+  color: #ffffff;
+  right: 0;
+}
+#header nav .s-1 {
+  padding-left: 40px;
+  width: 120px;
+}
+#header nav .s-1 .img {
+  height: 49px;
+  width: 49px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+#header nav .s-1 .img img {
+  border-radius: 50%;
+  width: 100%;
+}
+#header .navbar-light .navbar-toggler {
+  color: #ff7e00;
+}
+#header body.side-menu-visible #side-menu {
+  z-index: 99999;
+}
+#side-menu {
+  background: #08324f;
+  /*side menu resistration*/
+}
+#side-menu .close {
+  color: #ff7e00;
+}
+#side-menu .nav-link {
+  color: #ffffff;
+  text-transform: uppercase;
+  transition: all linear 0.3s;
+  -moz-transition: all linear 0.3s;
+  -ms-transition: all linear 0.3s;
+  -o-transition: all linear 0.3s;
+  -webkit-transition: all linear 0.3s;
+  position: relative;
+}
+#side-menu .nav-link:hover {
+  color: #ff7e00;
+}
+#side-menu .dropdown-menu {
+  left: -250%;
+  top: 86%;
+  background: #08324f;
+  border: 1px solid #ffffff;
+  z-index: 9999999;
+}
+#side-menu .dropdown-menu .dropdown-item {
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 14px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+#side-menu .dropdown-menu .dropdown-item:hover,
+#side-menu .dropdown-menu .dropdown-item:focus {
+  background: #ff7e00;
+  color: #ffffff;
+}
+#side-menu .side-link {
+  width: 125px;
+}
+#side-menu .side-link i {
+  padding-right: 10px;
+  color: #ff7e00;
+}
+#side-menu .side-link .dropdown-toggle::after {
+  display: none;
+}
+#side-menu .side-link .nav-link {
+  font-size: 16px;
+  font-family: 'poppins', sans-serif;
+  font-style: italic;
+  font-weight: 300;
+  color: #fffefe;
+  position: relative;
+}
+#side-menu .side-link .nav-link:hover,
+#side-menu .side-link .nav-link:focus {
+  color: #ff7e00;
+  background: transparent;
+}
+#side-menu .side-link .d .s2:before {
+  position: absolute;
+  content: '';
+  color: #ffffff;
+  right: 0;
+}
+/*header part end*/
+/*what we do part start*/
+#what-we-do {
+  background: #ececec;
+  padding-top: 90px;
+  padding-bottom: 30px;
+}
+#what-we-do .common-heading {
+  padding-bottom: 70px;
+}
+#what-we-do .common-heading p {
+  font-style: italic;
+  font-weight: 300;
+}
+#what-we-do .des {
+  font-size: 18px;
+  line-height: 24px;
+  color: #333333;
+  text-align: center;
+  padding-bottom: 30px;
+}
+/*what we do part end*/
+/*chat box start*/
+#transaction-time .ad-body {
+  width: 100%;
+  overflow: visible;
+}
+#transaction-time .ad-body .space .ad-client {
+  position: relative;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+}
+#transaction-time .ad-body .space .ad-client .img {
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+}
+#transaction-time .ad-body .space .ad-client .img img {
+  width: 100%;
+  height: 100%;
+}
+#transaction-time .ad-body .space .ad-client:hover .client-des,
+#transaction-time .ad-body .space .ad-client:focus .client-des {
+  width: 375px;
+  opacity: 1;
+  left: -390px;
+  visibility: visible;
+}
+#transaction-time .ad-body .space .ad-client .client-des {
+  visibility: hidden;
+  transition: all linear 0.3s;
+  -moz-transition: all linear 0.3s;
+  -ms-transition: all linear 0.3s;
+  -o-transition: all linear 0.3s;
+  -webkit-transition: all linear 0.3s;
+  position: absolute;
+  top: 0px;
+  left: 50px;
+  background: rgba(79, 78, 75, 0.9);
+  z-index: 99999;
+  padding: 15px;
+  width: 0px;
+  opacity: 0;
+  overflow: visible;
+}
+#transaction-time .ad-body .space .ad-client .client-des .client-pic {
+  width: 100%;
+  overflow: visible;
+  position: relative;
+}
+#transaction-time .ad-body .space .ad-client .client-des .client-pic img {
+  width: 100%;
+}
+#transaction-time .ad-body .space .ad-client .client-des .client-pic:after {
+  height: 40px;
+  width: 40px;
+  content: '';
+  background: #4f4e4b;
+  right: -30px;
+  top: 20px;
+  position: absolute;
+  transform: rotate(45deg);
+  z-index: -1;
+}
+#transaction-time .ad-body .space .ad-client .client-des h5 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #ffffff;
+  text-transform: capitalize;
+}
+#transaction-time .ad-body .space .ad-client .client-des .client-name-pic {
+  width: 100%;
+  overflow: hidden;
+}
+#transaction-time .ad-body .space .ad-client .client-des .client-name-pic .img {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  float: right;
+}
+#transaction-time .ad-body .space .ad-client .client-des .client-name-pic .img img {
+  border-right: 50%;
+  width: 100%;
+  height: 100%;
+  float: right;
+}
+#transaction-time .ad-body .space .ad-client .client-des h6 {
+  color: #ffffff;
+  font-family: 'Poppins', sans-serif;
+  text-transform: capitalize;
+  font-weight: 600;
+  padding-top: 18px;
+}
+#transaction-time .ad-body .space .ad-client .client-des .cp1 {
+  color: #ffffff;
+  font-size: 14px;
+  font-style: italic;
+  font-weight: 300;
+  padding-top: 0px;
+}
+#transaction-time .ad-body .space .ad-client .client-des p {
+  color: #ffffff;
+  font-size: 14px;
+  font-style: italic;
+  font-weight: 300;
+  padding-top: 30px;
+}
+#transaction-time .ad-body .top,
+#transaction-time .ad-body .bottom {
+  width: 100%;
+  overflow: visible;
+}
+#transaction-time .ad-body .top .space,
+#transaction-time .ad-body .bottom .space {
+  width: 20%;
+  height: 155px;
+  float: left;
+  overflow: visible;
+}
+#transaction-time .ad-body .top .space a,
+#transaction-time .ad-body .bottom .space a {
+  line-height: 155px;
+  text-decoration: underline;
+  color: #6c6b6b;
+  text-align: center;
+  text-transform: capitalize;
+}
+#transaction-time .ad-body .top .space:nth-child(1),
+#transaction-time .ad-body .bottom .space:nth-child(1) {
+  background: #ebebeb;
+}
+#transaction-time .ad-body .top .space:nth-child(2),
+#transaction-time .ad-body .bottom .space:nth-child(2) {
+  background: #f3dada;
+}
+#transaction-time .ad-body .top .space:nth-child(3),
+#transaction-time .ad-body .bottom .space:nth-child(3) {
+  background: #deebcd;
+}
+#transaction-time .ad-body .top .space:nth-child(4),
+#transaction-time .ad-body .bottom .space:nth-child(4) {
+  background: #ebebeb;
+}
+#transaction-time .ad-body .top .space:nth-child(5),
+#transaction-time .ad-body .bottom .space:nth-child(5) {
+  background: #f3dada;
+}
+#transaction-time .ad-body .mid {
+  width: 100%;
+  overflow: visible;
+}
+#transaction-time .ad-body .mid .left,
+#transaction-time .ad-body .mid .right {
+  width: 20%;
+  overflow: visible;
+  float: left;
+}
+#transaction-time .ad-body .mid .left .space,
+#transaction-time .ad-body .mid .right .space {
+  width: 100%;
+  height: 155px;
+  float: none;
+}
+#transaction-time .ad-body .mid .left .space a,
+#transaction-time .ad-body .mid .right .space a {
+  line-height: 155px;
+  text-decoration: underline;
+  color: #6c6b6b;
+  text-align: center;
+  text-transform: capitalize;
+}
+#transaction-time .ad-body .mid .left .space:nth-child(1),
+#transaction-time .ad-body .mid .right .space:nth-child(1) {
+  background: #deebcd;
+}
+#transaction-time .ad-body .mid .left .space:nth-child(2),
+#transaction-time .ad-body .mid .right .space:nth-child(2) {
+  background: #f3dada;
+}
+#transaction-time .ad-body .mid .left .space:nth-child(3),
+#transaction-time .ad-body .mid .right .space:nth-child(3) {
+  background: #deebcd;
+}
+#transaction-time .ad-body .mid .mid {
+  width: 60%;
+  overflow: visible;
+  float: left;
+  height: 465px;
+}
+#transaction-time .ad-body .mid .mid .img {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+#transaction-time .ad-body .mid .mid .img img {
+  width: 100%;
+  height: 100%;
+}
+#transaction-time .bt-link {
+  background: #0e76bd;
+  display: inline-block;
+  float: right;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  padding: 10px 40px;
+  margin-top: 30px;
+  transition: all linear 0.3s;
+  -moz-transition: all linear 0.3s;
+  -ms-transition: all linear 0.3s;
+  -o-transition: all linear 0.3s;
+  -webkit-transition: all linear 0.3s;
+}
+#transaction-time .bt-link:hover {
+  background: #ff7e00;
+}
+/*chat box end*/
+/*footer part start*/
+footer {
+  background: #131313;
+  padding: 70px 0px 0px;
+}
+footer .f-logo {
+  width: 100%;
+  overflow: hidden;
+  padding-bottom: 70px;
+}
+footer .f-logo img {
+  width: 100%;
+}
+footer .refer-link {
+  width: 100%;
+  overflow: hidden;
+  color: #ffffff;
+  padding-bottom: 30px;
+}
+footer .refer-link ul {
+  padding-left: 15px;
+  margin-bottom: 0;
+}
+footer .refer-link ul li a {
+  text-transform: uppercase;
+  font-family: 'Poppins', sans-serif;
+  color: #ffffff;
+  transition: all linear 0.3s;
+  -moz-transition: all linear 0.3s;
+  -ms-transition: all linear 0.3s;
+  -o-transition: all linear 0.3s;
+  -webkit-transition: all linear 0.3s;
+  font-size: 18px;
+  line-height: 30px;
+}
+footer .refer-link ul li a:hover {
+  color: #ff7e00;
+}
+footer form input {
+  width: 100%;
+  border: 0;
+  border: 1px solid white;
+  padding: 10px 20px;
+  background: transparent;
+  border-radius: 5px;
+  color: #ffffff;
+}
+footer form button {
+  color: #ffffff;
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+  text-transform: uppercase;
+  border: 0;
+  cursor: pointer;
+  padding: 18px 45px;
+  background: #0e76bd;
+  transition: all linear 0.3s;
+  -moz-transition: all linear 0.3s;
+  -ms-transition: all linear 0.3s;
+  -o-transition: all linear 0.3s;
+  -webkit-transition: all linear 0.3s;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+footer form button:hover {
+  background: #ff7e00;
+}
+footer form button i {
+  font-size: 24px;
+  padding-left: 20px;
+}
+footer .social-link {
+  width: 100%;
+  overflow: hidden;
+}
+footer .social-link p {
+  font-size: 16px;
+  line-height: 22px;
+  color: #ffffff;
+}
+footer .social-link a {
+  color: #ff7e00;
+  font-size: 18px;
+  padding: 20px 0px;
+}
+footer .social-link ul li {
+  float: left;
+}
+footer .social-link ul li a {
+  padding: 0;
+  display: inline-block;
+  color: #ffffff;
+  transition: all linear 0.3s;
+  -moz-transition: all linear 0.3s;
+  -ms-transition: all linear 0.3s;
+  -o-transition: all linear 0.3s;
+  -webkit-transition: all linear 0.3s;
+}
+footer .social-link ul li a:hover {
+  color: #ff7e00;
+}
+footer .social-link ul li a i {
+  margin-right: 15px;
+}
+footer .pb {
+  padding: 0;
+  color: #ffffff;
+  font-size: 18px;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+/*footer part end*/
+/*
+*
+*
+*
+*
+*
+*
+*
+*/

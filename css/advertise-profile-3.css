@@ -1,0 +1,238 @@
+/*
+*******************************************
+*******************************************
+
+Template Name: portfolio
+Template URL: http://
+Description:  Personal Portfolio Template.
+Author: Shefat production
+Author URL: https://mdshefat.com
+Version: 1.0
+
+* This file contains the styling for the actual theme, this
+is the file you need to edit to change the look of the
+theme.
+
+This files contents are outlined below >>>>
+
+*** SEARCH EACH SECTION AS IT COMMENTS, YOU WILL GET THE RIGHT SECTION.
+
+**************************************************
+**************************************************
+
+==== CSS INDEX ===================================
+
+01 - defaul css
+02 - Common heading part css
+03 - back to top button
+
+==================================================*/
+/*================================================
+    01 - defaul css
+==================================================*/
+* {
+    padding: 0;
+    outline: 0;
+    margin: 0;
+}
+
+body,
+p,
+a,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    display: block;
+    text-decoration: none;
+    margin-bottom: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+h1 {
+    font-size: 60px;
+    line-height: 54px;
+    color: #ffffff;
+}
+
+h2 {
+    font-size: 59px;
+    line-height: auto;
+}
+
+h5 {
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+p {
+    font-size: 16px;
+    line-height: 20px;
+    color: #6c6b6b;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+/*mixins and variables start*/
+/*mixins and variables end*/
+
+/*footer part start*/
+footer {
+    background: #131313;
+    padding: 70px 0px 0px;
+}
+
+footer .f-logo {
+    width: 100%;
+    overflow: hidden;
+    padding-bottom: 70px;
+}
+
+footer .f-logo img {
+    width: 100%;
+}
+
+footer .refer-link {
+    width: 100%;
+    overflow: hidden;
+    color: #ffffff;
+    padding-bottom: 30px;
+}
+
+footer .refer-link ul {
+    padding-left: 15px;
+    margin-bottom: 0;
+}
+
+footer .refer-link ul li a {
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+    color: #ffffff;
+    transition: all linear 0.3s;
+    -moz-transition: all linear 0.3s;
+    -ms-transition: all linear 0.3s;
+    -o-transition: all linear 0.3s;
+    -webkit-transition: all linear 0.3s;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+footer .refer-link ul li a:hover {
+    color: #ff7e00;
+}
+
+footer form input {
+    width: 100%;
+    border: 0;
+    border: 1px solid white;
+    padding: 10px 20px;
+    background: transparent;
+    border-radius: 5px;
+    color: #ffffff;
+}
+
+footer form button {
+    color: #ffffff;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    border: 0;
+    cursor: pointer;
+    padding: 18px 45px;
+    background: #0e76bd;
+    transition: all linear 0.3s;
+    -moz-transition: all linear 0.3s;
+    -ms-transition: all linear 0.3s;
+    -o-transition: all linear 0.3s;
+    -webkit-transition: all linear 0.3s;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+footer form button:hover {
+    background: #ff7e00;
+}
+
+footer form button i {
+    font-size: 24px;
+    padding-left: 20px;
+}
+
+footer .social-link {
+    width: 100%;
+    overflow: hidden;
+}
+
+footer .social-link p {
+    font-size: 16px;
+    line-height: 22px;
+    color: #ffffff;
+}
+
+footer .social-link a {
+    color: #ff7e00;
+    font-size: 18px;
+    padding: 20px 0px;
+}
+
+footer .social-link ul li {
+    float: left;
+}
+
+footer .social-link ul li a {
+    padding: 0;
+    display: inline-block;
+    color: #ffffff;
+    transition: all linear 0.3s;
+    -moz-transition: all linear 0.3s;
+    -ms-transition: all linear 0.3s;
+    -o-transition: all linear 0.3s;
+    -webkit-transition: all linear 0.3s;
+}
+
+footer .social-link ul li a:hover {
+    color: #ff7e00;
+}
+
+footer .social-link ul li a i {
+    margin-right: 15px;
+}
+
+footer .pb {
+    padding: 0;
+    color: #ffffff;
+    font-size: 18px;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+/*footer part end*/
+/*
+*
+*
+*
+*
+*
+*
+*
+*/

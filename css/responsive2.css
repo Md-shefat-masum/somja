@@ -1,0 +1,306 @@
+/* Extra small devices (portrait phones, less than 576px) */
+
+@media (min-width: 320px) and (max-width: 575px) {
+    .ad_pro_banner_part_3 {
+        padding-top: 65px;
+    }
+    .ad_pro_banner_part_3 .heading {
+        text-align: center;
+    }
+    .ad_pro_banner_part_3 .heading h1 {
+        padding-top: 15px;
+    }
+    .ad_pro_banner_part_3 .heading h5 {
+        font-size: 21px;
+    }
+    .ad_pro_banner_part_3 .followers {
+        margin: auto;
+        margin-top: 15px;
+        float: none;
+    }
+    .ad_pro_banner_part_3 .locations .loc_box {
+        padding-left: 10px;
+    }
+    .ad_pro_banner_part_3 .locations .sm_mt {
+        margin-top: 15px;
+    }
+    .ad_pro_about_part_3 {
+        padding-top: 70px;
+        padding-bottom: 64px;
+    }
+    .ad_pro_ads_part_3 {
+        padding-top: 75px;
+        padding-bottom: 85px;
+    }
+    .ad_pro_about_part_3 h2 {
+        font-size: 42px;
+    }
+    .ad_pro_about_part_3 h5 {
+        font-size: 22px;
+    }
+    .ad_pro_about_part_3 p {
+        padding-top: 80px;
+    }
+    .ad_pro_ads_part_3 .header h5 {
+        font-size: 22px;
+    }
+    .ad_pro_ads_part_3 .product:before {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .ad_pro_ads_part_3 .active {
+        margin-left: 0;
+    }
+    .ad_pro_ads_part_3 .ads_button {
+        margin-left: 7px;
+    }
+    .ad_pro_ads_part_3 .ads_button_next {
+        margin-left: 10px
+    }
+    .sm_tx_cen {
+        text-align: center;
+    }
+    .mt_20 {
+        margin-top: 20px;
+    }
+    .p_a_p_2_msg_part h2 {
+        font-size: 42px;
+        line-height: 48px;
+    }
+    .p_a_p_2_msg_part p {
+        line-height: 26px;
+    }
+    .p_a_p_2_msg_part .msg_box .msg_his {
+        height: 350px;
+    }
+    .p_a_p_2_msg_part .com_box .to_part {
+        text-align: left !important;
+    }
+    .p_a_p_2_msg_part .com_box .to_part .dropdown {
+        margin-top: 0;
+    }
+    .p_a_p_2_msg_part .com_box {
+        width: 100%;
+        border-top: 7px solid #f7f7f7;
+        border-bottom: 9px solid #f7f7f7;
+        border-left: 15px solid #f7f7f7;
+        border-right: 15px solid #f7f7f7;
+        padding-top: 20px;
+        padding-bottom: 50px;
+    }
+    .p_a_p_2_msg_part .com_box .send_button .save {
+        margin-left: 25px;
+    }
+    .p_a_p_2_msg_part .com_box .send_button .send {
+        padding: 11px 20px 9px 20px;
+    }
+    .p_a_p_2_msg_part {
+        padding-top: 75px;
+        padding-bottom: 75px;
+    }
+    .com_box .send_button {
+        text-align: center;
+    }
+    .dis_none {
+        display: none;
+    }
+    .p_c_u_2_contact_info_part {
+        padding-top: 90px;
+        padding-bottom: 90px;
+    }
+    .p_c_u_2_contact_info_part h2 {
+        font-size: 42px;
+    }
+    .p_c_u_2_contact_info_part p {
+        font-size: 22px;
+        line-height: 26px;
+        padding-bottom: 69px;
+    }
+    .reg_banner_part .reg_fill .reg_restu {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .reg_banner_part .reg_fill .reg_adver {
+        margin-left: 0;
+    }
+    .reg_banner_part .reg_fill .verification {
+        margin-left: 20px;
+    }
+    .reg_banner_part .reg_fill p {
+        padding-left: 42px;
+    }
+    .dis_b {
+        display: block;
+    }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+
+@media (min-width: 576px) and (max-width: 767px) {
+    .ad_pro_banner_part_3 {
+        padding-top: 65px;
+    }
+    .ad_pro_banner_part_3 .heading {
+        text-align: center;
+    }
+    .ad_pro_banner_part_3 .heading h1 {
+        padding-top: 15px;
+    }
+    .ad_pro_banner_part_3 .heading h5 {
+        font-size: 21px;
+    }
+    .ad_pro_banner_part_3 .followers {
+        margin: auto;
+        margin-top: 15px;
+        float: none;
+    }
+    .ad_pro_banner_part_3 .locations .loc_box {
+        padding-left: 10px;
+    }
+    .ad_pro_banner_part_3 .locations .sm_mt {
+        margin-top: 15px;
+    }
+    .ad_pro_about_part_3 {
+        padding-top: 70px;
+        padding-bottom: 64px;
+    }
+    .ad_pro_ads_part_3 {
+        padding-top: 75px;
+        padding-bottom: 85px;
+    }
+    .ad_pro_about_part_3 h2 {
+        font-size: 42px;
+    }
+    .ad_pro_about_part_3 h5 {
+        font-size: 22px;
+    }
+    .ad_pro_about_part_3 p {
+        padding-top: 80px;
+    }
+    .ad_pro_ads_part_3 .header h5 {
+        font-size: 22px;
+    }
+    .ad_pro_ads_part_3 .product:before {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .sm_tx_cen {
+        text-align: center;
+    }
+    .sm2_tx_cen {
+        text-align: center;
+    }
+    .pt_10 {
+        padding-top: 10px;
+    }
+    .mt_20 {
+        margin-top: 20px;
+    }
+    .com_box .send_button {
+        text-align: center;
+    }
+    .p_a_p_2_msg_part .com_box .to_part {
+        text-align: left !important;
+    }
+    .p_a_p_2_msg_part .com_box .to_part .dropdown {
+        margin-top: 0;
+    }
+    .p_a_p_2_msg_part .com_box {
+        padding-bottom: 50px;
+    }
+    .p_a_p_2_msg_part p {
+        line-height: 26px;
+    }
+    .p_c_u_2_contact_info_part p {
+        line-height: 26px;
+    }
+    .reg_banner_part .reg_fill .reg_restu {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .reg_banner_part .reg_fill .reg_adver {
+        margin-left: 0;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .ad_pro_banner_part_3 .locations .sm_mt {
+        margin-top: 15px;
+    }
+    .ad_pro_about_part_3 p {
+        padding-top: 100px;
+    }
+    .p_a_p_2_msg_part p {
+        line-height: 26px;
+    }
+    .p_a_p_2_msg_part .com_box .to_part {
+        text-align: left !important;
+    }
+    .p_a_p_2_msg_part .com_box .to_part .dropdown {
+        margin-top: 0;
+    }
+    .mt_20 {
+        margin-top: 20px;
+    }
+    .p_a_p_2_msg_part .com_box .send_button .save {
+        margin-left: 355px;
+    }
+    .p_a_p_2_msg_part .com_box {
+        padding-bottom: 50px;
+    }
+    .p_c_u_2_contact_part .mt_20 {
+        margin-top: 0;
+    }
+    .p_c_u_2_contact_info_part p {
+        line-height: 26px;
+    }
+    .reg_banner_part .reg_fill .reg_restu {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .reg_banner_part .reg_fill .reg_adver {
+        margin-left: 0;
+    }
+    .reg_banner_part .reg_fill .verification {
+        margin-left: 34px;
+    }
+    .reg_banner_part .reg_fill p {
+        padding-left: 75px;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .ad_pro_banner_part_3 .locations .lg_pl_10 {
+        padding-left: 10px;
+    }
+    .p_a_p_2_msg_part .com_box .send_button .send {
+        padding: 11px 20px 9px 20px;
+    }
+    .reg_banner_part .reg_fill .verification {
+        margin-left: 20px;
+    }
+    .reg_banner_part .reg_fill p {
+        padding-left: 40px;
+    }
+    .reg_banner_part .reg_fill .agreement {
+        margin-top: 32px;
+    }
+    .reg_banner_part .reg_fill .agreement p {
+        padding: 25px 33px 30px 36px;
+    }
+    .reg_banner_part .reg_fill .agreement p span {
+        padding-top: 15px;
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+
+@media (min-width: 1200px) and (max-width: 1201px) {}

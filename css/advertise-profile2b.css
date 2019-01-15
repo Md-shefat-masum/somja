@@ -1,0 +1,740 @@
+/*
+*******************************************
+*******************************************
+
+Template Name: portfolio
+Template URL: http://
+Description:  Personal Portfolio Template.
+Author: Shefat production
+Author URL: https://mdshefat.com
+Version: 1.0
+
+* This file contains the styling for the actual theme, this
+is the file you need to edit to change the look of the
+theme.
+
+This files contents are outlined below >>>>
+
+*** SEARCH EACH SECTION AS IT COMMENTS, YOU WILL GET THE RIGHT SECTION.
+
+**************************************************
+**************************************************
+
+==== CSS INDEX ===================================
+
+01 - defaul css
+02 - Common heading part css
+03 - back to top button
+
+==================================================*/
+/*================================================
+    01 - defaul css
+==================================================*/
+* {
+  padding: 0;
+  outline: 0;
+  margin: 0;
+}
+body,
+p,
+a,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  display: block;
+  text-decoration: none;
+  margin-bottom: 0;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+body {
+  overflow-x: hidden;
+}
+h1 {
+  font-size: 60px;
+  line-height: 54px;
+  color: #ffffff;
+}
+h2 {
+  font-size: 59px;
+  line-height: auto;
+}
+h5 {
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 30px;
+}
+p {
+  font-size: 16px;
+  line-height: 20px;
+  color: #6c6b6b;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+}
+/*mixins and variables start*/
+/*mixins and variables end*/
+/*header part start*/
+#header {
+  z-index: 99;
+}
+#header nav {
+  background: #08324f;
+  padding-top: 0;
+  padding-bottom: 0;
+  position: relative;
+  z-index: 99999999;
+  /*side menu resistration*/
+}
+#header nav:before {
+  width: 100%;
+  height: 6px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  content: '';
+  background: #ffffff;
+}
+#header nav .nav-item {
+  padding: 0;
+}
+#header nav .nav-item .nav-link {
+  color: #ffffff;
+  font-family: 'Poppins', sans-serif;
+  text-transform: uppercase;
+  font-size: 18px;
+  padding: 40px 20px;
+  transition: all linear 0.3s;
+  -moz-transition: all linear 0.3s;
+  -ms-transition: all linear 0.3s;
+  -o-transition: all linear 0.3s;
+  -webkit-transition: all linear 0.3s;
+}
+#header nav .nav-item .nav-link:hover,
+#header nav .nav-item .nav-link:focus {
+  background: #ff7e00;
+}
+#header nav .nav-item .dropdown-menu {
+  left: -250%;
+  top: 86%;
+  background: #08324f;
+  border: 1px solid #ffffff;
+  z-index: 9999999;
+}
+#header nav .nav-item .dropdown-menu .dropdown-item {
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 14px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+#header nav .nav-item .dropdown-menu .dropdown-item:hover,
+#header nav .nav-item .dropdown-menu .dropdown-item:focus {
+  background: #ff7e00;
+  color: #ffffff;
+}
+#header nav .nav-item .pro-pic {
+  padding-top: 22px;
+  padding-bottom: 22px;
+}
+#header nav .side-link {
+  width: 60px;
+  position: relative;
+}
+#header nav .side-link .dropdown-toggle::after {
+  display: none;
+}
+#header nav .side-link i {
+  padding-right: 5px;
+  color: #ffffff;
+  transition: all linear 0.3s;
+  -moz-transition: all linear 0.3s;
+  -ms-transition: all linear 0.3s;
+  -o-transition: all linear 0.3s;
+  -webkit-transition: all linear 0.3s;
+}
+#header nav .side-link .nav-link:focus {
+  background: #08324f;
+  color: #ff7e00;
+}
+#header nav .side-link .nav-link:hover i,
+#header nav .side-link .nav-link:focus i {
+  color: #ff7e00;
+  background: transparent;
+}
+#header nav .side-link .nav-link {
+  font-size: 16px;
+  font-family: 'poppins', sans-serif;
+  font-style: italic;
+  font-weight: 200;
+  color: #fffefe;
+  position: relative;
+}
+#header nav .side-link .nav-link:hover {
+  color: #ff7e00;
+  background: transparent;
+}
+#header nav .side-link .s2 {
+  padding-right: 10px;
+  padding-left: 10px;
+}
+#header nav .side-link .s2:before {
+  position: absolute;
+  content: '';
+  color: #ffffff;
+  right: 0;
+}
+#header nav .s-1 {
+  padding-left: 40px;
+  width: 120px;
+}
+#header nav .s-1 .img {
+  height: 49px;
+  width: 49px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+#header nav .s-1 .img img {
+  border-radius: 50%;
+  width: 100%;
+}
+#header .navbar-light .navbar-toggler {
+  color: #ff7e00;
+}
+#header body.side-menu-visible #side-menu {
+  z-index: 99999;
+}
+#side-menu {
+  background: #08324f;
+  /*side menu resistration*/
+}
+#side-menu .close {
+  color: #ff7e00;
+}
+#side-menu .nav-link {
+  color: #ffffff;
+  text-transform: uppercase;
+  transition: all linear 0.3s;
+  -moz-transition: all linear 0.3s;
+  -ms-transition: all linear 0.3s;
+  -o-transition: all linear 0.3s;
+  -webkit-transition: all linear 0.3s;
+  position: relative;
+}
+#side-menu .nav-link:hover {
+  color: #ff7e00;
+}
+#side-menu .dropdown-menu {
+  left: -250%;
+  top: 86%;
+  background: #08324f;
+  border: 1px solid #ffffff;
+  z-index: 9999999;
+}
+#side-menu .dropdown-menu .dropdown-item {
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 14px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+#side-menu .dropdown-menu .dropdown-item:hover,
+#side-menu .dropdown-menu .dropdown-item:focus {
+  background: #ff7e00;
+  color: #ffffff;
+}
+#side-menu .side-link {
+  width: 125px;
+}
+#side-menu .side-link i {
+  padding-right: 10px;
+  color: #ff7e00;
+}
+#side-menu .side-link .dropdown-toggle::after {
+  display: none;
+}
+#side-menu .side-link .nav-link {
+  font-size: 16px;
+  font-family: 'poppins', sans-serif;
+  font-style: italic;
+  font-weight: 300;
+  color: #fffefe;
+  position: relative;
+}
+#side-menu .side-link .nav-link:hover,
+#side-menu .side-link .nav-link:focus {
+  color: #ff7e00;
+  background: transparent;
+}
+#side-menu .side-link .d .s2:before {
+  position: absolute;
+  content: '';
+  color: #ffffff;
+  right: 0;
+}
+/*header part end*/
+/*what we do part start*/
+#what-we-do {
+  background: #ececec;
+  padding-top: 90px;
+  padding-bottom: 30px;
+}
+#what-we-do .common-heading {
+  padding-bottom: 70px;
+}
+#what-we-do .common-heading p {
+  font-style: italic;
+  font-weight: 300;
+}
+#what-we-do .des {
+  font-size: 18px;
+  line-height: 24px;
+  color: #333333;
+  text-align: center;
+  padding-bottom: 30px;
+}
+/*what we do part end*/
+/*chat box start*/
+#transaction-time .chat-body {
+  width: 100%;
+  overflow: hidden;
+  background: #f7f7f7;
+  padding: 10px 25px;
+  box-sizing: border-box;
+  padding-left: 25px;
+  /*chat messages*/
+}
+#transaction-time .chat-body .col-md-3,
+#transaction-time .chat-body .col-md-6 {
+  background: #ffffff;
+  padding: 0;
+}
+#transaction-time .chat-body .chat-left {
+  padding: 0px 15px;
+  padding-right: 0;
+  width: 100%;
+  overflow: hidden;
+  /*all convertion part */
+  /*chat clients*/
+}
+#transaction-time .chat-body .chat-left .all-convertions {
+  width: 100%;
+  overflow: hidden;
+  border-bottom: 1px solid #f7f7f7;
+}
+#transaction-time .chat-body .chat-left .all-convertions .dropdown {
+  background: transparent;
+}
+#transaction-time .chat-body .chat-left .all-convertions .dropdown button {
+  background: transparent;
+  color: #6c6b6b;
+  border: 0;
+  padding: 20px 10px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  font-style: italic;
+}
+#transaction-time .chat-body .chat-left .chat-buddies {
+  width: 100%;
+  height: 750px;
+  overflow-y: scroll;
+}
+#transaction-time .chat-body .chat-left .chat-buddies ul {
+  margin: 0;
+  padding: 0;
+}
+#transaction-time .chat-body .chat-left .chat-buddies .nav-pills .nav-item {
+  width: 100%;
+}
+#transaction-time .chat-body .chat-left .chat-buddies .nav-pills .nav-link {
+  width: 100%;
+  padding-left: 15px;
+  color: #141213;
+  padding-right: 0;
+}
+#transaction-time .chat-body .chat-left .chat-buddies .active,
+#transaction-time .chat-body .chat-left .chat-buddies .nav-pills .show > .nav-link {
+  background-color: #e1f7c1;
+  padding: 0;
+  border-radius: 0;
+  width: 100%;
+  color: #141213;
+}
+#transaction-time .chat-body .chat-left .chat-buddies .chat-clients {
+  width: 97%;
+  overflow: hidden;
+  padding: 10px 0px;
+}
+#transaction-time .chat-body .chat-left .chat-buddies .chat-clients .client-pic {
+  width: 66px;
+  height: 66px;
+  border-radius: 50%;
+  overflow: hidden;
+  float: left;
+  position: relative;
+}
+#transaction-time .chat-body .chat-left .chat-buddies .chat-clients .client-pic .not-active {
+  width: 15px;
+  height: 15px;
+  background: #ff7e00;
+  content: '';
+  position: absolute;
+  bottom: 11px;
+  right: 5px;
+  border-radius: 50%;
+}
+#transaction-time .chat-body .chat-left .chat-buddies .chat-clients .client-pic .active {
+  width: 15px;
+  height: 15px;
+  background: green;
+  content: '';
+  position: absolute;
+  bottom: 11px;
+  right: 5px;
+  border-radius: 50%;
+}
+#transaction-time .chat-body .chat-left .chat-buddies .chat-clients .client-pic .img {
+  width: 100%;
+  height: 100%;
+}
+#transaction-time .chat-body .chat-left .chat-buddies .chat-clients .client-pic .img img {
+  width: 100%;
+  border-radius: 50%;
+}
+#transaction-time .chat-body .chat-left .chat-buddies .chat-clients .client-name {
+  float: left;
+  padding: 12px 15px;
+  overflow: hidden;
+}
+#transaction-time .chat-body .chat-left .chat-buddies .chat-clients .client-name h3 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: capitalize;
+  line-height: 25px;
+}
+#transaction-time .chat-body .chat-left .chat-buddies .chat-clients .client-name .msg {
+  overflow: hidden;
+}
+#transaction-time .chat-body .chat-left .chat-buddies .chat-clients .client-name .msg p {
+  font-size: 13px;
+  font-weight: 300;
+  font-style: italic;
+}
+#transaction-time .chat-body .chat-left .chat-buddies .chat-clients .chat-time {
+  overflow: hidden;
+  text-align: right;
+  color: #7e7e7e;
+  font-style: italic;
+  line-height: 50px;
+  font-size: 13px;
+}
+#transaction-time .chat-body .mid-top {
+  width: 100%;
+  overflow: hidden;
+  padding: 12px 15px;
+  border-bottom: 1px solid #f7f7f7;
+}
+#transaction-time .chat-body .mid-top h3 {
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+#transaction-time .chat-body .mid-top p {
+  font-size: 10px;
+  font-style: italic;
+}
+#transaction-time .chat-body .chat-msg-body {
+  width: 100%;
+  height: 750px;
+  overflow: hidden;
+  position: relative;
+}
+#transaction-time .chat-body .chat-msg-body .top {
+  width: 100%;
+  height: 750px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  padding-bottom: 130px;
+}
+#transaction-time .chat-body .chat-msg-body .top .chat-msg {
+  width: 100%;
+  overflow: hidden;
+}
+#transaction-time .chat-body .chat-msg-body .top .chat-msg .single-chat {
+  width: 100%;
+  overflow: hidden;
+  padding: 15px 15px;
+}
+#transaction-time .chat-body .chat-msg-body .top .chat-msg .single-chat .img {
+  border-radius: 50%;
+  overflow: hidden;
+  width: 50px;
+  height: 50px;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+#transaction-time .chat-body .chat-msg-body .top .chat-msg .single-chat .img img {
+  width: 100%;
+  border-radius: 50%;
+}
+#transaction-time .chat-body .chat-msg-body .top .chat-msg .single-chat .msg-body {
+  width: 100%;
+  overflow: hidden;
+}
+#transaction-time .chat-body .chat-msg-body .top .chat-msg .single-chat .msg-body p:nth-child(1) {
+  font-size: 10px;
+  font-style: italic;
+  padding: 13px;
+}
+#transaction-time .chat-body .chat-msg-body .top .chat-msg .single-chat .msg-body p:nth-child(1) span {
+  color: #141213;
+  padding-right: 5px;
+  text-transform: capitalize;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 22px;
+}
+#transaction-time .chat-body .chat-msg-body .top .chat-msg .single-chat .msg-body p:nth-child(2) {
+  line-height: 20px;
+  font-size: 14px;
+}
+#transaction-time .chat-body .chat-msg-body .top .chat-msg .single-chat .msg-body img {
+  margin-top: 15px;
+}
+#transaction-time .chat-body .chat-msg-body form {
+  width: 97%;
+  background: #ffffff;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 0;
+  height: 130px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+#transaction-time .chat-body .chat-msg-body form textarea {
+  width: 90%;
+  border: 2px solid #acacac;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  height: 65px;
+  resize: none;
+  margin-bottom: 15px;
+}
+#transaction-time .chat-body .chat-msg-body form .input-file {
+  position: relative;
+  width: 50px;
+  height: 40px;
+  overflow: hidden;
+  float: left;
+  margin-left: 25px;
+  bottom: 12px;
+}
+#transaction-time .chat-body .chat-msg-body form .input-file input {
+  width: 40px;
+  height: 40px;
+  font-size: 0;
+  color: transparent;
+  border: 0;
+  overflow: hidden;
+  cursor: pointer;
+}
+#transaction-time .chat-body .chat-msg-body form .input-file input:after {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: #ffffff;
+  content: '';
+  left: 0;
+  top: 0;
+}
+#transaction-time .chat-body .chat-msg-body form .input-file input:before {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: transparent;
+  content: '';
+  left: 0;
+  top: 0;
+  z-index: 999;
+}
+#transaction-time .chat-body .chat-msg-body form .input-file i {
+  position: absolute;
+  left: 60%;
+  top: 0;
+  font-size: 18px;
+  color: #6c6b6b;
+  transform: rotate(80deg) translateX(-50%);
+}
+#transaction-time .chat-body .chat-msg-body form button {
+  width: 60px;
+  background: transparent;
+  color: #6c6b6b;
+  padding: 0;
+  float: right;
+  margin-right: 30px;
+  font-size: 18px;
+  font-style: italic;
+  font-family: 'Poppins', sans-serif;
+  position: absolute;
+  bottom: 15px;
+  right: 0;
+}
+#transaction-time .chat-body .right-top {
+  height: 65px;
+  width: 100%;
+  border-bottom: 1px solid rgba(204, 204, 204, 0.81);
+}
+#transaction-time .chat-body .right-content {
+  padding: 25px;
+}
+#transaction-time .chat-body .right-content h3 {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 26px;
+}
+#transaction-time .chat-body .right-content p {
+  padding: 10px 0px;
+  font-size: 14px;
+  font-weight: 400;
+}
+#transaction-time .chat-body .right-content p i {
+  font-size: 18px;
+  color: #141213;
+}
+/*chat box end*/
+/*footer part start*/
+footer {
+  background: #131313;
+  padding: 70px 0px 0px;
+}
+footer .f-logo {
+  width: 100%;
+  overflow: hidden;
+  padding-bottom: 70px;
+}
+footer .f-logo img {
+  width: 100%;
+}
+footer .refer-link {
+  width: 100%;
+  overflow: hidden;
+  color: #ffffff;
+  padding-bottom: 30px;
+}
+footer .refer-link ul {
+  padding-left: 15px;
+  margin-bottom: 0;
+}
+footer .refer-link ul li a {
+  text-transform: uppercase;
+  font-family: 'Poppins', sans-serif;
+  color: #ffffff;
+  transition: all linear 0.3s;
+  -moz-transition: all linear 0.3s;
+  -ms-transition: all linear 0.3s;
+  -o-transition: all linear 0.3s;
+  -webkit-transition: all linear 0.3s;
+  font-size: 18px;
+  line-height: 30px;
+}
+footer .refer-link ul li a:hover {
+  color: #ff7e00;
+}
+footer form input {
+  width: 100%;
+  border: 0;
+  border: 1px solid white;
+  padding: 10px 20px;
+  background: transparent;
+  border-radius: 5px;
+  color: #ffffff;
+}
+footer form button {
+  color: #ffffff;
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+  text-transform: uppercase;
+  border: 0;
+  cursor: pointer;
+  padding: 18px 45px;
+  background: #0e76bd;
+  transition: all linear 0.3s;
+  -moz-transition: all linear 0.3s;
+  -ms-transition: all linear 0.3s;
+  -o-transition: all linear 0.3s;
+  -webkit-transition: all linear 0.3s;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+footer form button:hover {
+  background: #ff7e00;
+}
+footer form button i {
+  font-size: 24px;
+  padding-left: 20px;
+}
+footer .social-link {
+  width: 100%;
+  overflow: hidden;
+}
+footer .social-link p {
+  font-size: 16px;
+  line-height: 22px;
+  color: #ffffff;
+}
+footer .social-link a {
+  color: #ff7e00;
+  font-size: 18px;
+  padding: 20px 0px;
+}
+footer .social-link ul li {
+  float: left;
+}
+footer .social-link ul li a {
+  padding: 0;
+  display: inline-block;
+  color: #ffffff;
+  transition: all linear 0.3s;
+  -moz-transition: all linear 0.3s;
+  -ms-transition: all linear 0.3s;
+  -o-transition: all linear 0.3s;
+  -webkit-transition: all linear 0.3s;
+}
+footer .social-link ul li a:hover {
+  color: #ff7e00;
+}
+footer .social-link ul li a i {
+  margin-right: 15px;
+}
+footer .pb {
+  padding: 0;
+  color: #ffffff;
+  font-size: 18px;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+/*footer part end*/
+/*
+*
+*
+*
+*
+*
+*
+*
+*/
